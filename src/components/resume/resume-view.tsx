@@ -48,13 +48,13 @@ const experiences = [
 
 const honors = [
   "Team Captain, University of Michigan football (2025), chosen by teammates",
-  "National Champion (2023), part of the 15-0 postseason run",
+  "National Champion (2023), part of the 15-0 postseason run and the NCAA Division I Football National Championship",
   "Third-team All-Big Ten (2025) and honorable mention (2024 and 2025)",
-  "Roger Zatkoff Award (2024), Michigan's most outstanding linebacker",
-  "Blue Collar Award (2024), for work ethic and preparation",
-  "Jason Witten Collegiate Man of the Year semifinalist (2025)",
-  "Big Ten Media Days representative (2025)",
-  "True freshman starter and Blackshirt recipient, University of Nebraska (2022)",
+  "Roger Zatkoff Award (2024), Michigan's most outstanding linebacker, after leading the team in tackles (89)",
+  "Blue Collar Award (2024), for work ethic, consistency, and preparation",
+  "Jason Witten Collegiate Man of the Year semifinalist (2025), for community impact and personal integrity",
+  "Big Ten Media Days representative (2025), selected by the coaching staff",
+  "True freshman starter and Blackshirt recipient, University of Nebraska (2022), with a varsity letter",
 ];
 
 const service = [
@@ -99,6 +99,11 @@ const skills = [
   "Security gateways",
   "Network switch configuration",
   "Endpoint provisioning",
+  "Risk assessment",
+  "Compliance support",
+  "Inventory management",
+  "Workflow organization",
+  "Project coordination",
 ];
 
 export function ResumeView() {
