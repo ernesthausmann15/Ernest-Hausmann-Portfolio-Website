@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">FES Institute certificate summary for Ernest Hausmann</title>
+  <desc id="desc">Frontend Development Bootcamp and practical internship at the FES Institute, founded by David Bragg.</desc>
+  <rect width="1200" height="820" fill="#f7f1e4"/>
+  <rect x="36" y="36" width="1128" height="748" fill="none" stroke="#1c2433" stroke-width="2"/>
+  <rect x="52" y="52" width="1096" height="716" fill="none" stroke="#c6a15a" stroke-width="3"/>
+  <text x="600" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="28" letter-spacing="8" fill="#1c2433">FES INSTITUTE</text>
+  <text x="600" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#6d5a32">Founded by David Bragg</text>
+  <text x="600" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="22" letter-spacing="4" fill="#6d5a32">PROGRAM CREDENTIAL</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="64" fill="#1c2433">Ernest Hausmann</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#1c2433">Frontend Development Bootcamp and Practical Internship</text>
+  <text x="600" y="580" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#3d4656">HTML ù CSS ù JavaScript ù React ù Next.js</text>
+  <text x="600" y="616" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#3d4656">Node.js ù TypeScript ù Redux</text>
+  <text x="600" y="700" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#6d5a32">Credential summary prepared for the professional portfolio</text>
+</svg>

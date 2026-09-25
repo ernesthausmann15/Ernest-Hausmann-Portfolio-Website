@@ -1,0 +1,21 @@
+---
+description: Project-specific rules for the cinematic portfolio website enforcing Next.js, Tailwind, Shadcn UI, GSAP, and Three.js with clean, interview-ready architecture.
+globs: **/*
+alwaysApply: true
+---
+
+# Cinematic Portfolio Project Rules
+
+## 1. Core Tech Stack & UI Framework
+- **Framework:** Next.js (App Router) with TypeScript, optimized for high performance and smooth server/client component separation.
+- **UI & Styling:** Tailwind CSS combined with **shadcn/ui** components for accessible, modern primitive design.
+- **Performance & Structure:** Keep 3D canvas and heavy animation logic modular so the app maintains a buttery-smooth 60+ FPS user experience.
+
+## 2. Animation & 3D Engineering (GSAP & Three.js)
+- **Three.js / React Three Fiber (R3F):** Used for immersive, performant 3D hero sections or background elements. Manage canvas rendering efficiently to prevent memory leaks.
+- **GSAP (GreenSock):** Use for precise timeline-based UI transitions, scroll-driven animations (`ScrollTrigger`), and fluid micro-interactions.
+- **Clean Animation Architecture:** Separate animation logic from core component markup using custom hooks or clean ref handling (`useRef`) so code remains readable.
+
+## 3. Interview-Ready Code & Explanation Standards
+- **Walkthrough-Friendly:** Every complex animation controller, Three.js scene setup, or state transition must feature clear, educational inline comments. 
+- **Self-Documenting Logic:** Write clean variable names and architectural patterns that you can confidently project, highlight, and explain line-by-line during a live technical or portfolio walkthrough interview.
