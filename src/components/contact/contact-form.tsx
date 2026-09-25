@@ -28,14 +28,18 @@ const emptyForm: FormState = {
  *
  * What: Sends name, email, company, and message through EmailJS.
  * Why: EmailJS delivers from the browser with a public key, so this site
- *      does not need its own mail server. The three IDs stay in environment
- *      variables so they can change per EmailJS account without a code edit.
- * How: `send` posts to EmailJS. Success clears the fields and raises a toast.
- *      A missing key, a network error, or a rejected template raises an error
- *      toast and leaves the message in place so it can be retried.
- *      The template in the EmailJS dashboard should expect `from_name`,
- *      `reply_to`, `company`, and `message`.
+ *      does not need its own mail server.
+ * How: `send` posts to EmailJS with Ernest's service, template, and public
+ *      key. The template is expected to use `from_name`, `reply_to`,
+ *      `company`, and `message`. Success clears the fields and raises a
+ *      toast. A network error or a rejected send raises an error toast and
+ *      leaves the message in place.
+ *      The template should expect `from_name`, `reply_to`, `company`, and
+ *      `message`, and should deliver to ernesthausmann15@gmail.com.
  */
+const emailJsServiceId = "service_yvphygo";
+const emailJsTemplateId = "template_tac1dgb";
+const emailJsPublicKey = "BjZHRqwxbscU4tABT";
 export function ContactForm() {
   const [form, setForm] = useState<FormState>(emptyForm);
   const [sending, setSending] = useState(false);
@@ -49,16 +53,9 @@ export function ContactForm() {
     event.preventDefault();
     setStatus("");
 
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      const notice = `Email delivery is not configured yet. Write to ${site.email}.`;
-      setStatus(notice);
-      toast.error(notice);
-      return;
-    }
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || emailJsServiceId;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || emailJsTemplateId;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || emailJsPublicKey;
 
     setSending(true);
     try {
