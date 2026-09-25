@@ -42,7 +42,7 @@ const experiences = [
     org: "Hy-Vee Foods",
     when: "Columbus, NE · March 2020 – June 2026",
     detail:
-      "A case is a layout. I kept frozen and dairy stock organized, tracked inventory, and ran audits so a shopper could find the product without a hunt. When someone was stuck, I helped them directly. It is ordinary work, and it trained the habit I use on screens: put the thing where a person expects it, and make the next step obvious.",
+      "I kept frozen and dairy stock organized, tracked inventory, and ran audits so a shopper could find the product without a hunt. When someone was stuck, I helped them directly. It is ordinary work, and it trained the habit I use on screens: put the thing where a person expects it, and make the next step obvious.",
   },
 ];
 
