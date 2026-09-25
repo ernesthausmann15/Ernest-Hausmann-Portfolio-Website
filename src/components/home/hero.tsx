@@ -72,9 +72,9 @@ export function Hero() {
     <section ref={sectionRef} className="hero-atmosphere relative isolate min-h-[100svh] overflow-hidden">
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         {reducedMotion ? null : <HeroCanvas active={canvasActive} />}
-        {/* A light left wash keeps the headline readable. It stays thin so the
-            particle field and ring remain visible across the rest of the hero. */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/15 to-transparent" />
+        {/* Solid wash under the copy. The field stays visible on the open
+            right side, and the words sit on the page color so they stay easy to read. */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background via-42% to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </div>
 
@@ -104,7 +104,7 @@ export function Hero() {
         </h1>
         <p
           data-hero="copy"
-          className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl"
+          className="mt-6 max-w-xl text-lg leading-relaxed text-foreground/85 md:text-xl"
         >
           I build interfaces people can understand quickly. My focus is frontend
           development, the details of user experience, and using AI tools to

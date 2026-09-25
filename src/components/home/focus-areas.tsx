@@ -7,10 +7,6 @@ const areas = [
     copy: "HTML, CSS, JavaScript, TypeScript, React, Next.js, and Redux. I like components that are small enough to explain out loud and sturdy enough to change.",
   },
   {
-    title: "User experience",
-    copy: "Clear hierarchy, honest loading states, and a next step that does not have to be guessed. A screen should stay calm when something is slow or missing.",
-  },
-  {
     title: "AI-assisted workflow",
     copy: "I use AI tools to explore options, draft, and debug. I still read the result, walk the path, and take responsibility for what ships.",
   },
@@ -25,7 +21,7 @@ export function FocusAreas() {
           What I want to get better at every week
         </h2>
       </Reveal>
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
+      <div className="mt-10 grid gap-6 md:grid-cols-2">
         {areas.map((area) => (
           <Reveal key={area.title}>
             <article className="h-full rounded-2xl bg-card p-6 ring-1 ring-foreground/10">
