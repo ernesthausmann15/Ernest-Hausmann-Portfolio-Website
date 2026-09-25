@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { displayFont } from "@/lib/fonts";
@@ -46,7 +47,8 @@ export function Hero() {
 
       const timeline = gsap.timeline({ defaults: { ease: "power3.out" } });
       timeline
-        .from("[data-hero='eyebrow']", { y: 16, autoAlpha: 0, duration: 0.55 })
+        .from("[data-hero='logo']", { scale: 0.86, autoAlpha: 0, duration: 0.7 })
+        .from("[data-hero='eyebrow']", { y: 16, autoAlpha: 0, duration: 0.55 }, "-=0.35")
         .from("[data-hero='title']", { y: 28, autoAlpha: 0, duration: 0.8 }, "-=0.3")
         .from("[data-hero='copy']", { y: 18, autoAlpha: 0, duration: 0.65 }, "-=0.45")
         .from("[data-hero='actions']", { y: 12, autoAlpha: 0, duration: 0.5 }, "-=0.35");
@@ -70,11 +72,22 @@ export function Hero() {
     <section ref={sectionRef} className="hero-atmosphere relative isolate min-h-[100svh] overflow-hidden">
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         {reducedMotion ? null : <HeroCanvas active={canvasActive} />}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/88 to-background/25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/55 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </div>
 
       <div className="relative mx-auto flex min-h-[100svh] w-full max-w-6xl flex-col justify-end px-6 pt-28 pb-20 md:justify-center md:pb-16">
+        <div data-hero="logo" className="mb-6">
+          <Image
+            src="/brand/hero-logo.svg"
+            alt="Ernest Hausmann monogram"
+            width={96}
+            height={96}
+            priority
+            unoptimized
+            className="size-24 rounded-2xl shadow-[0_0_40px_oklch(0.86_0.14_96_/_0.45)]"
+          />
+        </div>
         <p
           data-hero="eyebrow"
           className="text-xs font-medium tracking-[0.28em] text-primary uppercase"
