@@ -19,9 +19,7 @@ export default async function ProjectsPage() {
         Projects
       </h1>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-        These are the interfaces I have been building while learning frontend
-        engineering, including work from the FES Institute internship. Live
-        deployments are hosted on Vercel. The account home is{" "}
+        Each card opens a live Vercel deployment. The account home is{" "}
         <a
           href={site.vercelUrl}
           target="_blank"
