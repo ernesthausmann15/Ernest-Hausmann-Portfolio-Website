@@ -30,16 +30,16 @@ function createPositions(count: number, seedStart: number, spread: number) {
   return buffer;
 }
 
-const goldPositions = createPositions(2600, 15, 3.2);
-const bluePositions = createPositions(900, 42, 2.1);
+const goldPositions = createPositions(3400, 15, 4.4);
+const bluePositions = createPositions(1600, 42, 3.4);
 
 /**
  * Bright field behind the hero copy.
  *
  * What: Two particle clouds plus a lit gold ring.
- * Why: A faint cloud disappears into the navy background. Larger points,
- *      a second cool-colored layer, and an emissive ring stay readable
- *      even under the text scrim.
+ * Why: A small, dim cloud disappears into the navy background and under
+ *      the headline scrim. Larger points, a denser cool layer, and a thick
+ *      emissive ring stay obvious across the hero, including beside the copy.
  * How: Positions are seeded once at module scope. `useFrame` rotates by
  *      `delta` so the speed stays steady. The parent sets `frameloop` to
  *      "demand" when the hero leaves the viewport, which stops the loop.
@@ -50,8 +50,8 @@ function GoldField() {
   useFrame((_, delta) => {
     const mesh = points.current;
     if (!mesh) return;
-    mesh.rotation.y += delta * 0.12;
-    mesh.rotation.x += delta * 0.03;
+    mesh.rotation.y += delta * 0.22;
+    mesh.rotation.x += delta * 0.06;
   });
 
   return (
@@ -59,7 +59,7 @@ function GoldField() {
       <PointMaterial
         transparent
         color="#ffe38a"
-        size={0.045}
+        size={0.09}
         sizeAttenuation
         depthWrite={false}
         opacity={1}
@@ -74,8 +74,8 @@ function BlueField() {
   useFrame((_, delta) => {
     const mesh = points.current;
     if (!mesh) return;
-    mesh.rotation.y -= delta * 0.18;
-    mesh.rotation.z += delta * 0.04;
+    mesh.rotation.y -= delta * 0.32;
+    mesh.rotation.z += delta * 0.08;
   });
 
   return (
@@ -83,10 +83,10 @@ function BlueField() {
       <PointMaterial
         transparent
         color="#8ec5ff"
-        size={0.032}
+        size={0.07}
         sizeAttenuation
         depthWrite={false}
-        opacity={0.95}
+        opacity={1}
       />
     </Points>
   );
@@ -98,19 +98,19 @@ function SignalRing() {
   useFrame((_, delta) => {
     const mesh = ring.current;
     if (!mesh) return;
-    mesh.rotation.x += delta * 0.35;
-    mesh.rotation.y += delta * 0.45;
+    mesh.rotation.x += delta * 0.55;
+    mesh.rotation.y += delta * 0.7;
   });
 
   return (
     <mesh ref={ring}>
-      <torusGeometry args={[1.85, 0.055, 32, 120]} />
+      <torusGeometry args={[2.15, 0.11, 32, 140]} />
       <meshStandardMaterial
-        color="#f6d56a"
-        emissive="#f6d56a"
-        emissiveIntensity={2.2}
-        metalness={0.35}
-        roughness={0.2}
+        color="#ffe38a"
+        emissive="#ffe38a"
+        emissiveIntensity={3.4}
+        metalness={0.2}
+        roughness={0.15}
       />
     </mesh>
   );
@@ -119,7 +119,7 @@ function SignalRing() {
 export function HeroCanvas({ active }: { active: boolean }) {
   return (
     <Canvas
-      camera={{ position: [0, 0, 5.4], fov: 48 }}
+      camera={{ position: [0.6, 0.1, 4.2], fov: 58 }}
       dpr={[1, 1.75]}
       frameloop={active ? "always" : "demand"}
       gl={{
@@ -128,9 +128,9 @@ export function HeroCanvas({ active }: { active: boolean }) {
         powerPreference: "high-performance",
       }}
     >
-      <ambientLight intensity={0.85} />
-      <pointLight position={[3.5, 2.2, 4]} intensity={40} color="#ffe38a" />
-      <pointLight position={[-3.2, -1.4, 2]} intensity={24} color="#8ec5ff" />
+      <ambientLight intensity={1.15} />
+      <pointLight position={[3.5, 2.2, 4]} intensity={70} color="#ffe38a" />
+      <pointLight position={[-3.2, -1.4, 2]} intensity={48} color="#8ec5ff" />
       <SignalRing />
       <GoldField />
       <BlueField />

@@ -72,7 +72,9 @@ export function Hero() {
     <section ref={sectionRef} className="hero-atmosphere relative isolate min-h-[100svh] overflow-hidden">
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         {reducedMotion ? null : <HeroCanvas active={canvasActive} />}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/55 to-transparent" />
+        {/* A light left wash keeps the headline readable. It stays thin so the
+            particle field and ring remain visible across the rest of the hero. */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/15 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </div>
 
