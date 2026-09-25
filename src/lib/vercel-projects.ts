@@ -5,11 +5,10 @@ import { featuredProjects, type Project } from "@/lib/projects";
  *
  * What: Returns the curated catalog, with production and repository URLs
  *       filled in when `VERCEL_ACCESS_TOKEN` is present.
- * Why: The public profile at vercel.com/ernest-hausmann is behind login, so
- *      the browser cannot scrape it. The REST API is the supported way to
- *      read that account. The catalog still renders if the token is missing
- *      or the request fails — the page should never depend on a secret to
- *      tell the story.
+ * Why: A Vercel dashboard is behind login, so the browser cannot read it.
+ *      The REST API is the supported way to attach production links. The
+ *      catalog still renders if the token is missing or the request fails —
+ *      the page should never depend on a secret to tell the story.
  * How: Match each curated card to a project by `vercelName` or `slug`.
  *      Keep the written description. Only the links are replaced.
  */

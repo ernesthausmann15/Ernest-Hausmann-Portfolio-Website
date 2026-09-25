@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ProjectGrid } from "@/components/projects/project-grid";
 import { displayFont } from "@/lib/fonts";
-import { site } from "@/lib/site";
 import { getProjects } from "@/lib/vercel-projects";
 
 export const metadata: Metadata = {
@@ -19,16 +18,9 @@ export default async function ProjectsPage() {
         Projects
       </h1>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-        Each card opens a live Vercel deployment. The account home is{" "}
-        <a
-          href={site.vercelUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="text-primary underline-offset-4 hover:underline"
-        >
-          vercel.com/ernest-hausmann
-        </a>
-        .
+        These are the interfaces I have been building while learning frontend
+        engineering, including work from the FES Institute internship. Each
+        card that has a live deployment opens that site directly.
       </p>
       <div className="mt-12">
         <ProjectGrid projects={projects} />

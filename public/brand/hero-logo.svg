@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Ernest Hausmann monogram</title>
+  <rect width="240" height="240" rx="48" fill="#141a28"/>
+  <circle cx="120" cy="120" r="92" fill="none" stroke="#f3c94d" stroke-width="3"/>
+  <circle cx="120" cy="120" r="78" fill="none" stroke="#7eb6ff" stroke-width="1.5" opacity="0.9"/>
+  <text x="120" y="132" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#f7f1e4">EH</text>
+</svg>
