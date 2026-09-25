@@ -7,7 +7,6 @@ export const site = {
   email: "ernesthausmann15@gmail.com",
   foundationUrl: "https://lightbeneaththewell.org",
   fesUrl: "https://www.frontendsimplified.com",
-  vercelUrl: "https://vercel.com/ernest-hausmann",
   certificatePath: "/fes-certificate.svg",
 } as const;
 
