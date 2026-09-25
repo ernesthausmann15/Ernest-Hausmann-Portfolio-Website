@@ -6,8 +6,9 @@
  *      a sentence about what the product does and which skills it proves.
  *      This file is that sentence. `getProjects()` can later attach the live
  *      URL and GitHub link from the Vercel API without rewriting the copy.
- * How: Add a `repoUrl` when the repository is public. Add `vercelName` when
- *      it should match a project slug in the ernest-hausmann Vercel account.
+ * How: `liveUrl` is the published deployment for that product. `vercelName`
+ *      is the project slug from that same hostname, so a later API lookup
+ *      can refresh the link without changing the written story.
  */
 
 export type Project = {
@@ -36,21 +37,25 @@ export const featuredProjects: Project[] = [
   },
   {
     slug: "ultraverse",
+    vercelName: "web-murex-one-99",
     title: "Ultraverse",
     context: "FES practical internship",
     summary: "A Next.js marketplace for browsing a live NFT catalog.",
     description:
       "The home page shows a collections carousel, new items, and a ranked seller list. Explore sorts and searches the catalog. A creator route and an item route each load one record. Those sections request data on their own, so a slow response in one area does not blank the rest of the page.",
     stack: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+    liveUrl: "https://web-murex-one-99.vercel.app",
   },
   {
     slug: "movie-grab",
+    vercelName: "movie-grab-typescript-x7d7",
     title: "Movie Grab",
     context: "Frontend project",
     summary: "A film search app with a saved theme and a stable detail URL.",
     description:
       "Search a film catalogue, scan results behind a loading skeleton, and open one movie on its own route. The light or dark theme is stored in the browser so it is still there after a refresh. Shared chrome — navigation and footer — reads that theme from the app root.",
     stack: ["React", "JavaScript", "React Router"],
+    liveUrl: "https://movie-grab-typescript-x7d7.vercel.app",
   },
   {
     slug: "library",
