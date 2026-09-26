@@ -7,8 +7,7 @@ import { getProjects } from "@/lib/vercel-projects";
 export default async function HomePage() {
   const projects = await getProjects();
 
-  // Home previews the three products that have a published deployment.
-  // The full catalog, including projects without a live URL, is on /projects.
+  // Home previews the published products. The same catalog is on /projects.
   return (
     <>
       <Hero />
