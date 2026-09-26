@@ -4,6 +4,7 @@ export const site = {
   description:
     "Portfolio of Ernest Hausmann, a junior software engineer focused on frontend development, user experience, and AI-assisted workflows.",
   linkedInUrl: "https://www.linkedin.com/in/ernest-hausmann-a4755a387/",
+  githubUrl: "https://github.com/ernesthausmann15",
   email: "ernesthausmann15@gmail.com",
   foundationUrl: "https://lightbeneaththewell.org",
   fesUrl: "https://www.frontendsimplified.com",

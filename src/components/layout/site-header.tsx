@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
+import { GitHubMark } from "@/components/icons/github-mark";
 import { LinkedInMark } from "@/components/icons/linkedin-mark";
 import { Button } from "@/components/ui/button";
 import {
@@ -86,15 +87,26 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
           <NavItems pathname={pathname} />
-          <a
-            href={site.linkedInUrl}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Ernest Hausmann on LinkedIn"
-            className="text-primary transition-opacity hover:opacity-80"
-          >
-            <LinkedInMark className="size-5" />
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href={site.githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Ernest Hausmann on GitHub"
+              className="text-primary transition-opacity hover:opacity-80"
+            >
+              <GitHubMark className="size-5" />
+            </a>
+            <a
+              href={site.linkedInUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Ernest Hausmann on LinkedIn"
+              className="text-primary transition-opacity hover:opacity-80"
+            >
+              <LinkedInMark className="size-5" />
+            </a>
+          </div>
         </nav>
 
         <Sheet>
@@ -109,6 +121,17 @@ export function SiteHeader() {
             </SheetHeader>
             <nav className="flex flex-col gap-5 px-4" aria-label="Mobile">
               <NavItems pathname={pathname} onNavigate />
+              <SheetClose asChild>
+                <a
+                  href={site.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-primary"
+                >
+                  <GitHubMark className="size-4" />
+                  GitHub
+                </a>
+              </SheetClose>
               <SheetClose asChild>
                 <a
                   href={site.linkedInUrl}
