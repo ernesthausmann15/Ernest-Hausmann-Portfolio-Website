@@ -6,14 +6,15 @@ import { displayFont } from "@/lib/fonts";
 import { site } from "@/lib/site";
 
 /**
- * Static certificate.
+ * Issued certificate.
  *
- * What: The graduation credential rendered from `public/certificates`.
- * Why: A file in `public` is served at the site root. The image and the
- *      link use that same path, so the employer sees the asset instead of
- *      a broken or missing URL.
+ * What: The graduation PDF from `public/certificates`, plus a PNG of that same page.
+ * Why: The PDF is the file that was issued. A browser PDF plugin often hides the
+ *      page inside its own viewer, so the resume shows a render of that page and
+ *      the open link still serves the original PDF.
  */
-const certificateSrc = "/certificates/fes-certificate.svg";
+const certificatePdf = site.certificatePath;
+const certificatePreview = "/certificates/fes-certificate.png";
 
 const experiences = [
   {
@@ -180,13 +181,13 @@ export function ResumeView() {
           </h2>
           <p className="mt-5 leading-relaxed text-muted-foreground">
             I completed the Frontend Development Bootcamp and a practical internship
-            at the FES Institute, founded by David Bragg. The certificate is the file
-            in the site&apos;s static folder. The skills I use from it are HTML, CSS,
+            at the FES Institute, founded by David Bragg. The certificate shown here
+            is the one I was issued. The skills I use from it are HTML, CSS,
             JavaScript, React, Next.js, Node.js, TypeScript, and Redux.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild className="h-10 px-4">
-              <a href={certificateSrc} target="_blank" rel="noreferrer">
+              <a href={certificatePdf} target="_blank" rel="noreferrer">
                 Open certificate
               </a>
             </Button>
@@ -198,19 +199,19 @@ export function ResumeView() {
           </div>
         </div>
         <a
-          href={certificateSrc}
+          href={certificatePdf}
           target="_blank"
           rel="noreferrer"
           aria-label="Open the FES Institute certificate of graduation"
           className="block overflow-hidden rounded-2xl ring-1 ring-primary/30 transition hover:ring-primary/70"
         >
           <Image
-            src={certificateSrc}
-            width={1200}
-            height={820}
+            src={certificatePreview}
+            width={1685}
+            height={1191}
             unoptimized
             alt="Certificate of graduation for Ernest Hausmann, Frontend Development Bootcamp and practical internship at the FES Institute, founded by David Bragg."
-            className="h-auto w-full bg-[#f7f1e4]"
+            className="h-auto w-full bg-[#f7f4ee]"
           />
         </a>
       </section>
@@ -251,16 +252,18 @@ export function ResumeView() {
             resources for education and public-health work, help plan well projects
             from a site assessment through equipment and maintenance, follow the rules
             that govern a registered nonprofit, and watch the budget so money lands
-            on the work. The measure is the experience on the ground, not the announcement.
+            on the work. I am grateful to be trusted with that, and I try to keep
+            the focus on the community the well is meant to serve.
           </p>
         </div>
         <div className="mt-10 max-w-3xl">
           <h3 className="text-lg font-medium">University of Michigan and University of Nebraska football</h3>
           <p className="mt-1 text-sm text-primary">2022 – 2025</p>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Captaining was mostly making the plan visible and holding the standard
-            when the day was hard. I want that same clarity in a product: people
-            should know what is being asked of them.
+            It was an honor to be chosen captain by my teammates. Most of that
+            work was making the plan clear and holding the standard when the day
+            was hard. I hope to bring that same care into a product, so people
+            know what is being asked of them.
           </p>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
             {honors.map((honor) => (

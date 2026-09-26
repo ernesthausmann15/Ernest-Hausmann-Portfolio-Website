@@ -7,7 +7,7 @@ export const site = {
   email: "ernesthausmann15@gmail.com",
   foundationUrl: "https://lightbeneaththewell.org",
   fesUrl: "https://www.frontendsimplified.com",
-  certificatePath: "/fes-certificate.svg",
+  certificatePath: "/certificates/fes-certificate.pdf",
 } as const;
 
 export const navLinks = [

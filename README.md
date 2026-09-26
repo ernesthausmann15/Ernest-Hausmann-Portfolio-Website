@@ -22,4 +22,4 @@ Story copy lives in `src/lib/projects.ts`. Set `VERCEL_ACCESS_TOKEN` (and `VERCE
 
 ## Certificate
 
-The resume links to `public/fes-certificate.svg`. Point `NEXT_PUBLIC_FES_CERTIFICATE_URL` at the issued PDF when you want that file to open instead.
+The resume shows the issued credential. The original file is `public/certificates/fes-certificate.pdf`, and the page paints a render of that same page.
