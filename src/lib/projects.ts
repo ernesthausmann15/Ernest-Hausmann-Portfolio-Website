@@ -48,22 +48,13 @@ export const featuredProjects: Project[] = [
   },
   {
     slug: "movie-grab",
-    vercelName: "movie-grab-typescript-x7d7",
+    vercelName: "movie-grab-typescript",
     title: "Movie Grab",
     context: "Frontend project",
     summary: "A film search app with a saved theme and a stable detail URL.",
     description:
       "Search a film catalogue, scan results behind a loading skeleton, and open one movie on its own route. The light or dark theme is stored in the browser so it is still there after a refresh. Shared chrome — navigation and footer — reads that theme from the app root.",
     stack: ["React", "JavaScript", "React Router"],
-    liveUrl: "https://movie-grab-typescript-x7d7.vercel.app",
-  },
-  {
-    slug: "library",
-    title: "Library",
-    context: "Frontend project",
-    summary: "A bookstore interface with featured titles and a working cart.",
-    description:
-      "A landing page leads into highlights, featured books, and an explore view. Each book has a detail page. The cart lives in the app shell, so adding a title, changing a quantity, or removing a line updates every route that can see it.",
-    stack: ["React", "JavaScript", "React Router"],
+    liveUrl: "https://movie-grab-typescript.vercel.app/",
   },
 ];
