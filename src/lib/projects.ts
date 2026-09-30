@@ -39,7 +39,7 @@ export const featuredProjects: Project[] = [
     slug: "summarist",
     vercelName: "virtual-internship-umber",
     title: "Summarist",
-    context: "FES virtual internship",
+    context: "FES project",
     summary: "A book-summary product for reading, listening, and saving titles.",
     description:
       "Landing, a personal feed, book detail, an audio player, a saved library, and subscription plans. Search waits briefly before it calls the API. Covers move from the feed to the detail page to the player so the person always knows which book they opened. Auth and the library sit on Firebase. Checkout uses Stripe.",
@@ -50,7 +50,7 @@ export const featuredProjects: Project[] = [
     slug: "ultraverse",
     vercelName: "web-murex-one-99",
     title: "Ultraverse",
-    context: "FES practical internship",
+    context: "FES project",
     summary: "A Next.js marketplace for browsing a live NFT catalog.",
     description:
       "The home page shows a collections carousel, new items, and a ranked seller list. Explore sorts and searches the catalog. A creator route and an item route each load one record. Those sections request data on their own, so a slow response in one area does not blank the rest of the page.",
@@ -61,7 +61,7 @@ export const featuredProjects: Project[] = [
     slug: "movie-grab",
     vercelName: "movie-grab-typescript",
     title: "Movie Grab",
-    context: "Frontend project",
+    context: "FES project",
     summary: "A film search app with a saved theme and a stable detail URL.",
     description:
       "Search a film catalogue, scan results behind a loading skeleton, and open one movie on its own route. The light or dark theme is stored in the browser so it is still there after a refresh. Shared chrome — navigation and footer — reads that theme from the app root.",
