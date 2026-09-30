@@ -12,7 +12,7 @@ export default async function HomePage() {
     <>
       <Hero />
       <FocusAreas />
-      <SelectedWork projects={projects.slice(0, 3)} />
+      <SelectedWork projects={projects} />
       <ContactSection />
     </>
   );

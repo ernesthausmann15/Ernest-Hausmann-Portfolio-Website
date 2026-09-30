@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { displayFont } from "@/lib/fonts";
+import { featuredProjects } from "@/lib/projects";
 import { site } from "@/lib/site";
 
 /**
@@ -16,9 +17,25 @@ import { site } from "@/lib/site";
 const certificatePdf = site.certificatePath;
 const certificatePreview = "/certificates/fes-certificate.png";
 
-const experiences = [
+const experiences: {
+  title: string;
+  org: string;
+  when: string;
+  detail: string;
+  liveUrl?: string;
+}[] = [
   {
-    title: "Practical internship",
+    // Names the product, then the part Ernest built. The lists are what the
+    // AI returns, so an employer does not have to infer it from a job title.
+    title: "Software Engineering Intern",
+    org: "Skinstric",
+    when: "2026 – Present",
+    detail:
+      "I built the screens for Skinstric's onboarding AI. A person starts with a short setup, takes a photo, and the AI returns ranked estimates for age, sex, and race. My work was the camera step and the result screens: the strongest estimate appears first, and the person can tell what to look at next.",
+    liveUrl: featuredProjects.find((project) => project.slug === "skinstric")?.liveUrl,
+  },
+  {
+    title: "Virtual internship",
     org: "FES Institute",
     when: "Frontend development",
     detail:
@@ -127,11 +144,7 @@ export function ResumeView() {
           </a>
         </p>
         <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          I am moving into frontend engineering. I care about what a person sees,
-          how they move through a screen, and how AI tools can speed the work
-          without replacing the judgment. The years before this were operations,
-          infrastructure, and team leadership. I am bringing that discipline with
-          me, and I am still a student of the craft.
+        I am a software developer focused on building end-to-end applications that feel seamless to use and stable under the hood. Drawing on a background in operations and infrastructure, I bring a structured, dependable approach to solving technical problems. I embrace modern tools like AI to build efficiently, while keeping a firm grounding in fundamentals and human judgment. I'm always learning, always building, and excited for what's next.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild className="h-10 px-4">
@@ -224,12 +237,22 @@ export function ResumeView() {
           {experiences.map((item) => (
             <li key={item.title} className="relative">
               <span className="absolute top-1.5 -left-[2.4rem] size-3 rounded-full bg-primary ring-4 ring-background" />
-              <h3 className="text-lg font-medium">{item.title}</h3>
+              <h3 className="text-lg font-medium text-balance">{item.title}</h3>
               <p className="mt-1 text-sm text-primary">
                 {item.org}
                 <span className="text-muted-foreground"> · {item.when}</span>
               </p>
-              <p className="mt-3 max-w-3xl leading-relaxed text-muted-foreground">{item.detail}</p>
+              <p className="mt-3 max-w-3xl leading-relaxed break-words text-muted-foreground">{item.detail}</p>
+              {item.liveUrl ? (
+                <a
+                  href={item.liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-3 inline-block text-sm text-primary underline-offset-4 hover:underline"
+                >
+                  Live site
+                </a>
+              ) : null}
             </li>
           ))}
         </ol>

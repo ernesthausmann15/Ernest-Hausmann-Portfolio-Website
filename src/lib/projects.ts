@@ -25,6 +25,17 @@ export type Project = {
 
 export const featuredProjects: Project[] = [
   {
+    slug: "skinstric",
+    vercelName: "skinstric-internship-nu-nine",
+    title: "Skinstric",
+    context: "Software engineering internship",
+    summary: "An onboarding AI that reads a photo and ranks age, sex, and race.",
+    description:
+      "A short setup leads into a camera step, then a result screen. The photo goes to the AI, and the answer comes back as three lists: age, sex, and race, strongest estimate first. The same path stays readable on a phone.",
+    stack: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+    liveUrl: "https://skinstric-internship-nu-nine.vercel.app",
+  },
+  {
     slug: "summarist",
     vercelName: "virtual-internship-umber",
     title: "Summarist",
