@@ -106,9 +106,7 @@ export function Hero() {
           data-hero="copy"
           className="mt-6 max-w-xl text-lg leading-relaxed text-foreground/85 md:text-xl"
         >
-          I build interfaces people can understand quickly. My focus is frontend
-          development, the details of user experience, and using AI tools to
-          move carefully and faster.
+          Crafting scalable backend logic and responsive frontend interfaces. Passionate about data integrity, application security, and writing maintainable code that scales smoothly.
         </p>
         <div data-hero="actions" className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg" className="h-10 px-4">

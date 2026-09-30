@@ -1,8 +1,8 @@
 export const site = {
   name: "Ernest Hausmann",
-  role: "Junior Software Engineer",
+  role: "Software Developer",
   description:
-    "Portfolio of Ernest Hausmann, a junior software engineer focused on frontend development, user experience, and AI-assisted workflows.",
+  "Crafting scalable backend logic and responsive frontend interfaces. Passionate about data integrity, application security, and writing maintainable code that scales smoothly.",
   linkedInUrl: "https://www.linkedin.com/in/ernest-hausmann-a4755a387/",
   githubUrl: "https://github.com/ernesthausmann15",
   email: "ernesthausmann15@gmail.com",

@@ -17,13 +17,15 @@ export function ProjectCard({ project }: { project: Project }) {
     <Card className="h-full bg-card/80 transition duration-300 hover:-translate-y-1 hover:ring-primary/40">
       <CardHeader>
         <p className="text-xs tracking-[0.18em] text-primary uppercase">{project.context}</p>
-        <CardTitle className={`${displayFont.className} text-3xl font-normal`}>{project.title}</CardTitle>
+        <CardTitle className={`${displayFont.className} text-3xl font-normal leading-tight text-balance`}>
+          {project.title}
+        </CardTitle>
         <CardDescription className="text-base leading-relaxed text-foreground/80">
           {project.summary}
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-1 flex-col gap-5">
-        <p className="leading-relaxed text-muted-foreground">{project.description}</p>
+        <p className="leading-relaxed break-words text-muted-foreground">{project.description}</p>
         <ul className="flex flex-wrap gap-2">
           {project.stack.map((item) => (
             <li key={item}>
