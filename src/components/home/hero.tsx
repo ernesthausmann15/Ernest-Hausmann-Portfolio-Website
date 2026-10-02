@@ -18,7 +18,8 @@ import { site } from "@/lib/site";
  *      required because WebGL has no document to draw into on the server.
  */
 const HeroCanvas = dynamic(
-  () => import("@/components/home/hero-canvas").then((module) => module.HeroCanvas),
+  () =>
+    import("@/components/home/hero-canvas").then((module) => module.HeroCanvas),
   { ssr: false },
 );
 
@@ -47,11 +48,31 @@ export function Hero() {
 
       const timeline = gsap.timeline({ defaults: { ease: "power3.out" } });
       timeline
-        .from("[data-hero='logo']", { scale: 0.86, autoAlpha: 0, duration: 0.7 })
-        .from("[data-hero='eyebrow']", { y: 16, autoAlpha: 0, duration: 0.55 }, "-=0.35")
-        .from("[data-hero='title']", { y: 28, autoAlpha: 0, duration: 0.8 }, "-=0.3")
-        .from("[data-hero='copy']", { y: 18, autoAlpha: 0, duration: 0.65 }, "-=0.45")
-        .from("[data-hero='actions']", { y: 12, autoAlpha: 0, duration: 0.5 }, "-=0.35");
+        .from("[data-hero='logo']", {
+          scale: 0.86,
+          autoAlpha: 0,
+          duration: 0.7,
+        })
+        .from(
+          "[data-hero='eyebrow']",
+          { y: 16, autoAlpha: 0, duration: 0.55 },
+          "-=0.35",
+        )
+        .from(
+          "[data-hero='title']",
+          { y: 28, autoAlpha: 0, duration: 0.8 },
+          "-=0.3",
+        )
+        .from(
+          "[data-hero='copy']",
+          { y: 18, autoAlpha: 0, duration: 0.65 },
+          "-=0.45",
+        )
+        .from(
+          "[data-hero='actions']",
+          { y: 12, autoAlpha: 0, duration: 0.5 },
+          "-=0.35",
+        );
     },
     { scope: sectionRef, dependencies: [reducedMotion] },
   );
@@ -69,7 +90,10 @@ export function Hero() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="hero-atmosphere relative isolate min-h-[100svh] overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="hero-atmosphere relative isolate min-h-[100svh] overflow-hidden"
+    >
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         {reducedMotion ? null : <HeroCanvas active={canvasActive} />}
         {/* Solid wash under the copy. The field stays visible on the open
@@ -106,7 +130,10 @@ export function Hero() {
           data-hero="copy"
           className="mt-6 max-w-xl text-lg leading-relaxed text-foreground/85 md:text-xl"
         >
-          Crafting scalable backend logic and responsive frontend interfaces. Passionate about data integrity, application security, and writing maintainable code that scales smoothly.
+          Engineering intelligent AI systems and scalable full-stack
+          applications. Specialized in LLM orchestration, robust data pipelines,
+          and high-performance React architectures that bridge advanced AI
+          models with seamless user experiences.{" "}
         </p>
         <div data-hero="actions" className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg" className="h-10 px-4">

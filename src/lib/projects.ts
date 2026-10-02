@@ -25,11 +25,35 @@ export type Project = {
 
 export const featuredProjects: Project[] = [
   {
+    slug: "flash-sale",
+    vercelName: "flash-sale-app", // Update this with your actual Vercel project name if different
+    title: "Flash Sale & AI Platform",
+    context: "Full-Stack & AI Development",
+    summary:
+      "A high-reliability e-commerce inventory system with real-time product management and AI integration.",
+    description:
+      "A streamlined dashboard handles instant product submissions, synchronizing a live catalog backed by a secure PostgreSQL database. The application utilizes prompt engineering and AI-driven logic to automate product workflows, while leveraging a robust asynchronous React architecture to guarantee seamless performance across devices — with continuous feature additions in AI orchestration.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "Render",
+      "Vercel",
+      "AI / Prompt Engineering",
+    ],
+    liveUrl: "https://flash-sale-app-neon.vercel.app/",
+  },
+
+  {
     slug: "skinstric",
     vercelName: "skinstric-internship-nu-nine",
     title: "Skinstric",
     context: "Software engineering internship",
-    summary: "An onboarding AI that reads a photo and ranks age, sex, and race.",
+    summary:
+      "An onboarding AI that reads a photo and ranks age, sex, and race.",
     description:
       "A short setup leads into a camera step, then a result screen. The photo goes to the AI, and the answer comes back as three lists: age, sex, and race, strongest estimate first. The same path stays readable on a phone.",
     stack: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
@@ -40,10 +64,18 @@ export const featuredProjects: Project[] = [
     vercelName: "virtual-internship-umber",
     title: "Summarist",
     context: "FES project",
-    summary: "A book-summary product for reading, listening, and saving titles.",
+    summary:
+      "A book-summary product for reading, listening, and saving titles.",
     description:
       "Landing, a personal feed, book detail, an audio player, a saved library, and subscription plans. Search waits briefly before it calls the API. Covers move from the feed to the detail page to the player so the person always knows which book they opened. Auth and the library sit on Firebase. Checkout uses Stripe.",
-    stack: ["Next.js", "TypeScript", "Redux", "Firebase", "Stripe", "Tailwind CSS"],
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Redux",
+      "Firebase",
+      "Stripe",
+      "Tailwind CSS",
+    ],
     liveUrl: "https://virtual-internship-umber.vercel.app",
   },
   {

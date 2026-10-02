@@ -5,7 +5,8 @@ import { getProjects } from "@/lib/vercel-projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Selected frontend projects by Ernest Hausmann, including live Vercel deployments.",
+  description:
+    "Selected frontend projects by Ernest Hausmann, including live Vercel deployments.",
 };
 
 export default async function ProjectsPage() {
@@ -14,13 +15,16 @@ export default async function ProjectsPage() {
   return (
     <div className="mx-auto w-full max-w-6xl px-6 py-16 md:py-24">
       <p className="text-xs tracking-[0.22em] text-primary uppercase">Work</p>
-      <h1 className={`${displayFont.className} mt-3 max-w-3xl text-5xl leading-none md:text-7xl`}>
+      <h1
+        className={`${displayFont.className} mt-3 max-w-3xl text-5xl leading-none md:text-7xl`}
+      >
         Projects
       </h1>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-        These are the interfaces I have been building while learning frontend
-        engineering, including work from the FES Institute internship. Each
-        card that has a live deployment opens that site directly.
+        A collection of production-ready web applications, intelligent AI
+        integrations, and full-stack systems—featuring work from the FES
+        Institute and independent engineering projects. Cards with live
+        deployments open their respective sites directly.
       </p>
       <div className="mt-12">
         <ProjectGrid projects={projects} />

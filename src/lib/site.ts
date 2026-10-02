@@ -1,8 +1,8 @@
 export const site = {
   name: "Ernest Hausmann",
-  role: "Software Developer",
+  role: "AI Engineer & Full-Stack Developer",
   description:
-  "Crafting scalable backend logic and responsive frontend interfaces. Passionate about data integrity, application security, and writing maintainable code that scales smoothly.",
+    "Engineering intelligent AI systems and scalable full-stack applications. Specialized in LLM orchestration, robust data pipelines, and high-performance React architectures that bridge advanced AI models with seamless user experiences.",
   linkedInUrl: "https://www.linkedin.com/in/ernest-hausmann-a4755a387/",
   githubUrl: "https://github.com/ernesthausmann15",
   email: "ernesthausmann15@gmail.com",

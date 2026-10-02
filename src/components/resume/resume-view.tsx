@@ -109,11 +109,22 @@ const skills = [
   "React",
   "Next.js",
   "Node.js",
+  "Python",
   "Redux",
+  "Render",
+  "Vercel",
+  "Github",
+  "Supabase",
+  "PostgreSQL",
+  "LLM orchestration",
+  "Data pipelines",
+  "Backend stability",
+  "System reliability",
+  "Full-stack development",
+  "Frontend development",
   "User experience",
   "AI-assisted workflow",
   "Linux administration",
-  "Python",
   "Security gateways",
   "Network switch configuration",
   "Endpoint provisioning",
@@ -144,8 +155,7 @@ export function ResumeView() {
           </a>
         </p>
         <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-        I am a software developer focused on building end-to-end applications that feel seamless to use and stable under the hood. Drawing on a background in operations and infrastructure, I bring a structured, dependable approach to solving technical problems. I embrace modern tools like AI to build efficiently, while keeping a firm grounding in fundamentals and human judgment. I'm always learning, always building, and excited for what's next.
-        </p>
+        AI Engineer and Full-Stack Developer specializing in intelligent agent orchestration, robust LLM integrations, and scalable React architectures. Combines hands-on production experience in building dependable data pipelines with a disciplined approach to backend stability and system reliability. Rapidly turns advanced technical concepts into high-performance, user-ready applications.        </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild className="h-10 px-4">
             <a href={site.linkedInUrl} target="_blank" rel="noreferrer">
