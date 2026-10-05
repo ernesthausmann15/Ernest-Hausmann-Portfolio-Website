@@ -4,10 +4,10 @@ import { site } from "@/lib/site";
 export function SiteFooter() {
   return (
     <footer className="border-t border-border">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 pt-8 pb-24 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
         <p>
           {site.name}
-          <span className="px-2 text-border">/</span>
+          <span className="px-2 text-border" aria-hidden="true">/</span>
           {site.role}
         </p>
         <div className="flex items-center gap-5">

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { FloatingDock } from "@/components/assistant/floating-dock";
+import { ErrorBoundary } from "@/components/error-boundary";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { Toaster } from "@/components/ui/sonner";
@@ -41,6 +43,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <SiteFooter />
+        <ErrorBoundary name="floating-dock">
+          <FloatingDock />
+        </ErrorBoundary>
         <Toaster />
       </body>
     </html>

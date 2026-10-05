@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ErrorBoundary } from "@/components/error-boundary";
 import { Button } from "@/components/ui/button";
 import { displayFont } from "@/lib/fonts";
 import { gsap, useGSAP } from "@/lib/motion";
@@ -95,7 +96,13 @@ export function Hero() {
       className="hero-atmosphere relative isolate min-h-[100svh] overflow-hidden"
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        {reducedMotion ? null : <HeroCanvas active={canvasActive} />}
+        {/* WebGL can fail on old GPUs or blocked contexts. The CSS
+            atmosphere underneath is the fallback, so the hero still reads. */}
+        {reducedMotion ? null : (
+          <ErrorBoundary name="hero-canvas">
+            <HeroCanvas active={canvasActive} />
+          </ErrorBoundary>
+        )}
         {/* Solid wash under the copy. The field stays visible on the open
             right side, and the words sit on the page color so they stay easy to read. */}
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background via-42% to-transparent" />
