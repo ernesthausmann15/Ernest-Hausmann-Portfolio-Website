@@ -162,13 +162,11 @@ export function ResumeView() {
             </a>
             <span className="text-muted-foreground"> · {leadership.foundation.when}</span>
           </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">{leadership.foundation.detail}</p>
         </div>
         <div className="mt-10 max-w-3xl">
           <h3 className="text-lg font-medium">{leadership.football.title}</h3>
           <p className="mt-1 text-sm text-primary">{leadership.football.when}</p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">{leadership.football.detail}</p>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
+           <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
             {honors.map((honor) => (
               <li key={honor}>{honor}</li>
             ))}
@@ -176,23 +174,7 @@ export function ResumeView() {
         </div>
       </section>
 
-      <section className="mt-20" aria-labelledby="service-heading">
-        <h2 id="service-heading" className={`${displayFont.className} text-4xl`}>
-          Community
-        </h2>
-        <ul className="mt-8 space-y-6">
-          {service.map((item) => (
-            <li key={item.title}>
-              <h3 className="font-medium">{item.title}</h3>
-              <p className="text-sm text-primary">
-                {item.org}
-                {item.when ? <span className="text-muted-foreground"> · {item.when}</span> : null}
-              </p>
-              <p className="mt-1 max-w-3xl leading-relaxed text-muted-foreground">{item.detail}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
+      
 
       <section className="mt-20" aria-labelledby="skills-heading">
         <h2 id="skills-heading" className={`${displayFont.className} text-4xl`}>

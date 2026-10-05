@@ -5,7 +5,6 @@ import {
   honors,
   leadership,
   resumeSummary,
-  service,
   skills,
 } from "@/lib/resume";
 import { site } from "@/lib/site";
@@ -62,14 +61,10 @@ const reference = [
     ),
   ),
   section("leadership", [
-    `${leadership.foundation.title}, ${leadership.foundation.org} (${leadership.foundation.when}): ${leadership.foundation.detail}`,
-    `${leadership.football.title} (${leadership.football.when}): ${leadership.football.detail}`,
+    `${leadership.foundation.title}, ${leadership.foundation.org} (${leadership.foundation.when})`,
+    `${leadership.football.title} (${leadership.football.when})`,
     ...honors.map((honor) => `- ${honor}`),
   ]),
-  section(
-    "community",
-    service.map((item) => `${item.title}, ${item.org}${item.when ? ` (${item.when})` : ""}: ${item.detail}`),
-  ),
   section("skills", [skills.join(", ")]),
 ].join("\n\n");
 
