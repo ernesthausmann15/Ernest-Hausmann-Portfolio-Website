@@ -6,7 +6,7 @@ import { getProjects } from "@/lib/vercel-projects";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Selected frontend projects by Ernest Hausmann, including live Vercel deployments.",
+    "Selected frontend projects by Ernest Hausmann, including live deployments.",
 };
 
 export default async function ProjectsPage() {

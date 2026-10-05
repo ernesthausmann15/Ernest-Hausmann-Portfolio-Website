@@ -71,7 +71,7 @@ export const experiences: {
   {
     title: "IT Systems & Infrastructure Intern",
     org: "Loup Power District",
-    when: "Columbus, NE · June 2026 – December 2026",
+    when: "Columbus, NE · June 2026 – Present",
     detail:
       "The work is infrastructure, and the part I carry into frontend engineering is what a person can see and trust. I help test tasks through deployment, configure and deploy Schweitzer Engineering Laboratories SEL-3620 and SEL-3622 security gateways, sit in on design reviews for operational network communication, assist with rack installs, cable organization, and switch maintenance, and prepare workstations from standard procedures. A gateway or a workstation is only useful if the operator can tell what state it is in and what to do next. That is the same standard I want an interface to meet.",
   },
