@@ -25,26 +25,27 @@ export type Project = {
 
 export const featuredProjects: Project[] = [
   {
-    slug: "flash-sale",
-    vercelName: "flash-sale-app", // Update this with your actual Vercel project name if different
-    title: "Flash Sale & AI Platform",
-    context: "Full-Stack & AI Development",
+    slug: "vrymnox-liquidation-engine",
+    vercelName: "vrymnox-liquidation-hub",
+    title: "Vrymnox — AI-Powered Liquidation & Flash Sale Engine",
+    context: "Full-Stack Architecture & AI Integration",
     summary:
-      "A high-reliability e-commerce inventory system with real-time product management and AI integration.",
+      "A high-concurrency industrial clearance platform featuring atomic database transactions, enterprise-grade security, and an AI-driven command assistant.",
     description:
-      "A streamlined dashboard handles instant product submissions, synchronizing a live catalog backed by a secure PostgreSQL database. The application utilizes prompt engineering and AI-driven logic to automate product workflows, while leveraging a robust asynchronous React architecture to guarantee seamless performance across devices — with continuous feature additions in AI orchestration.",
+      "Vrymnox bridges rigorous software engineering with AI orchestration. It features a secure FastAPI backend communicating with a Next.js 16 frontend styled with an industrial Google Stitch design system. Built to solve high-stakes flash sale concurrency challenges, the architecture implements atomic database transactions to eliminate race conditions, double-submit CSRF protection, and role-based access control. An integrated AI command utility enables inventory managers to execute natural language stock queries and rapid adjustments seamlessly.",
     stack: [
+      "FastAPI",
+      "Python",
       "Next.js",
       "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Supabase",
+      "Tailwind CSS v4",
       "PostgreSQL",
-      "Render",
+      "SQLAlchemy",
       "Vercel",
-      "AI / Prompt Engineering",
+      "Render",
+      "AI / LLM Integration",
     ],
-    liveUrl: "https://flash-sale-app-neon.vercel.app/",
+    liveUrl: "https://www.vrymnox.com",
   },
 
   {
