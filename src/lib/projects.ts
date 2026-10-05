@@ -60,36 +60,7 @@ export const featuredProjects: Project[] = [
     stack: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
     liveUrl: "https://skinstric-internship-nu-nine.vercel.app",
   },
-  {
-    slug: "summarist",
-    vercelName: "virtual-internship-umber",
-    title: "Summarist",
-    context: "FES project",
-    summary:
-      "A book-summary product for reading, listening, and saving titles.",
-    description:
-      "Landing, a personal feed, book detail, an audio player, a saved library, and subscription plans. Search waits briefly before it calls the API. Covers move from the feed to the detail page to the player so the person always knows which book they opened. Auth and the library sit on Firebase. Checkout uses Stripe.",
-    stack: [
-      "Next.js",
-      "TypeScript",
-      "Redux",
-      "Firebase",
-      "Stripe",
-      "Tailwind CSS",
-    ],
-    liveUrl: "https://virtual-internship-umber.vercel.app",
-  },
-  {
-    slug: "ultraverse",
-    vercelName: "web-murex-one-99",
-    title: "Ultraverse",
-    context: "FES project",
-    summary: "A Next.js marketplace for browsing a live NFT catalog.",
-    description:
-      "The home page shows a collections carousel, new items, and a ranked seller list. Explore sorts and searches the catalog. A creator route and an item route each load one record. Those sections request data on their own, so a slow response in one area does not blank the rest of the page.",
-    stack: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
-    liveUrl: "https://web-murex-one-99.vercel.app",
-  },
+ 
   {
     slug: "movie-grab",
     vercelName: "movie-grab-typescript",
