@@ -86,54 +86,20 @@ export const leadership = {
   foundation: {
     title: "Founder and executive director",
     org: "Light Beneath the Well",
-    when: "2023 – present",
-    detail:
-      "The foundation exists so a community can drink clean water. I coordinate resources for education and public-health work, help plan well projects from a site assessment through equipment and maintenance, follow the rules that govern a registered nonprofit, and watch the budget so money lands on the work. I am grateful to be trusted with that, and I try to keep the focus on the community the well is meant to serve.",
+    when: "2023 – 2026",
   },
   football: {
     title: "University of Michigan and University of Nebraska football",
     when: "2022 – 2025",
-    detail:
-      "It was an honor to be chosen captain by my teammates. Most of that work was making the plan clear and holding the standard when the day was hard. I hope to bring that same care into a product, so people know what is being asked of them.",
   },
 } as const;
 
 export const honors = [
   "Team Captain, University of Michigan football (2025), chosen by teammates",
-  "National Champion (2023), part of the 15-0 postseason run and the NCAA Division I Football National Championship",
-  "Third-team All-Big Ten (2025) and honorable mention (2024 and 2025)",
-  "Roger Zatkoff Award (2024), Michigan's most outstanding linebacker, after leading the team in tackles (89)",
-  "Blue Collar Award (2024), for work ethic, consistency, and preparation",
-  "Jason Witten Collegiate Man of the Year semifinalist (2025), for community impact and personal integrity",
-  "Big Ten Media Days representative (2025), selected by the coaching staff",
-  "True freshman starter and Blackshirt recipient, University of Nebraska (2022), with a varsity letter",
+  "National Champion (2023)",
 ];
 
-export const service: { title: string; org: string; when?: string; detail: string }[] = [
-  {
-    title: "Adoption ambassador",
-    org: "Samaritas, Michigan",
-    when: "2025 – present",
-    detail:
-      "Support child-welfare awareness and speak up for foster-care networks. The work is outreach: helping a person understand a program and decide to take part.",
-  },
-  {
-    title: "Youth mentor and speaker",
-    org: "Juvenile detention facilities, Detroit and Ann Arbor",
-    detail:
-      "Join mentorship sessions on personal development, goal-setting, and decisions. I try to leave a clear next step, not a speech.",
-  },
-  {
-    title: "Patient engagement volunteer",
-    org: "C.S. Mott Children's Hospital, Ann Arbor",
-    detail: "Visit pediatric patients and families during hospital stays.",
-  },
-  {
-    title: "Community event volunteer",
-    org: "Special Olympics and youth camps",
-    detail: "Help with logistics so athletes and campers can take part without friction.",
-  },
-];
+
 
 export const skills = [
   "HTML",
