@@ -16,9 +16,16 @@ export const resumeSummary =
 
 export const location = "Columbus, NE 68601";
 
-export const phone = { display: "734-680-3501", href: "tel:+17346803501" } as const;
+export const phone = {
+  display: "734-680-3501",
+  href: "tel:+17346803501",
+} as const;
 
-export const education: { school: string; credential: string; detail?: string }[] = [
+export const education: {
+  school: string;
+  credential: string;
+  detail?: string;
+}[] = [
   {
     school: "Central Community College — Columbus, NE",
     credential: "Certificate in Cybersecurity, expected May 2027",
@@ -50,15 +57,10 @@ export const experiences: {
     when: "2026 – Present",
     detail:
       "I built the screens for Skinstric's onboarding AI. A person starts with a short setup, takes a photo, and the AI returns ranked estimates for age, sex, and race. My work was the camera step and the result screens: the strongest estimate appears first, and the person can tell what to look at next.",
-    liveUrl: featuredProjects.find((project) => project.slug === "skinstric")?.liveUrl,
+    liveUrl: featuredProjects.find((project) => project.slug === "skinstric")
+      ?.liveUrl,
   },
-  {
-    title: "Virtual internship",
-    org: "FES Institute",
-    when: "Frontend development",
-    detail:
-      "I built screens people actually move through. On Summarist, a reader lands, opens a book, chooses read or listen, saves it, and can subscribe. The cover stays recognizable from the feed to the player so they never lose the title they picked. On Ultraverse, collections, new items, search, a creator page, and an item page each load on their own, so one slow request does not blank what the person is already looking at.",
-  },
+
   {
     title: "Frontend Development Bootcamp",
     org: "FES Institute",
@@ -73,20 +75,13 @@ export const experiences: {
     detail:
       "The work is infrastructure, and the part I carry into frontend engineering is what a person can see and trust. I help test tasks through deployment, configure and deploy Schweitzer Engineering Laboratories SEL-3620 and SEL-3622 security gateways, sit in on design reviews for operational network communication, assist with rack installs, cable organization, and switch maintenance, and prepare workstations from standard procedures. A gateway or a workstation is only useful if the operator can tell what state it is in and what to do next. That is the same standard I want an interface to meet.",
   },
-  {
-    title: "Frozen & Dairy Operations Specialist",
-    org: "Hy-Vee Foods",
-    when: "Columbus, NE · March 2020 – June 2026",
-    detail:
-      "I kept frozen and dairy stock organized, tracked inventory, and ran audits so a shopper could find the product without a hunt. When someone was stuck, I helped them directly. It is ordinary work, and it trained the habit I use on screens: put the thing where a person expects it, and make the next step obvious.",
-  },
 ];
 
 export const leadership = {
   foundation: {
     title: "Founder and executive director",
     org: "Light Beneath the Well",
-    when: "2023 – 2026",
+    when: "2023 – Present",
   },
   football: {
     title: "University of Michigan and University of Nebraska football",
@@ -99,38 +94,17 @@ export const honors = [
   "National Champion (2023)",
 ];
 
-
-
 export const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
   "Node.js",
   "Python",
-  "Redux",
-  "Render",
-  "Vercel",
-  "Github",
-  "Supabase",
   "PostgreSQL",
-  "LLM orchestration",
-  "Data pipelines",
-  "Backend stability",
-  "System reliability",
-  "Full-stack development",
-  "Frontend development",
-  "User experience",
-  "AI-assisted workflow",
-  "Linux administration",
-  "Security gateways",
-  "Network switch configuration",
-  "Endpoint provisioning",
-  "Risk assessment",
-  "Compliance support",
-  "Inventory management",
-  "Workflow organization",
-  "Project coordination",
+  "Supabase",
+  "LLM Orchestration",
+  "Data Pipelines",
+  "Vercel / Render",
+  "Linux Administration",
+  "Full-Stack Development",
 ];
