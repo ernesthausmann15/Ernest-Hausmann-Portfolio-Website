@@ -11,7 +11,6 @@ import {
   location,
   phone,
   resumeSummary,
-  service,
   skills,
 } from "@/lib/resume";
 import { site } from "@/lib/site";
