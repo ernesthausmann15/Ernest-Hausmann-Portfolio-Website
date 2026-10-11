@@ -27,7 +27,7 @@ export const featuredProjects: Project[] = [
   {
   slug: "liquidation-hub",
   vercelName: "liquidation-hub",
-  title: "Liquidation Hub - E-Commerce & Flash Sale Marketplace",
+  title: "Liquidation Hub: E-Commerce Showcase",
   context:
     "Full-Stack Architecture, Real-Time State Simulation",
   summary:
