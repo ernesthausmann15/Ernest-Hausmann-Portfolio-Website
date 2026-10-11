@@ -44,7 +44,7 @@ export const featuredProjects: Project[] = [
       "Render",
       "AI / LLM Integration",
     ],
-    liveUrl: "https://www.vrymnox.com",
+    liveUrl: "https://staged.vrymnox.com",
   },
 
   {
