@@ -33,7 +33,7 @@ export const featuredProjects: Project[] = [
     summary:
       "An industrial-grade asset liquidation command center featuring zero-credential employer demo modes, real-time engagement analytics, and robust atomic concurrency controls.",
     description:
-      "Vrymnox is a production-ready full-stack showcase engineered to demonstrate rigorous software architecture and security best practices. Built with Next.js, Express, and PostgreSQL 18, it features granular role-based access control (RBAC), secure session handling, and atomic database transactions to completely eliminate race conditions during high-stakes flash sales. To maximize recruiter engagement, it includes interactive dual demo modes (Manager and Viewer) powered by a privacy-first salted IP hash analytics pipeline. The system is fully hardened with proxy-aware rate limiting, error sanitization, and automated self-healing data routines to ensure 24/7 reliability.",
+      "Vrymnox is a production-ready full-stack showcase engineered to demonstrate rigorous software architecture and security best practices. Built with Next.js, Express, and PostgreSQL 18, it features granular role-based access control (RBAC), secure session handling, and atomic database transactions to eliminate race conditions during high-stakes flash sales. To deliver a seamless interactive experience, it includes frictionless dual demo modes (Manager and Viewer) supported by a privacy-first salted IP hash analytics pipeline. The system is fully hardened with proxy-aware rate limiting, error sanitization, and automated self-healing data routines to ensure 24/7 reliability for all visitors.",
     stack: [
       "Next.js",
       "TypeScript",
