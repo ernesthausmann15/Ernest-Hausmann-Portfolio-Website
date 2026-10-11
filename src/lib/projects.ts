@@ -25,27 +25,26 @@ export type Project = {
 
 export const featuredProjects: Project[] = [
   {
-    slug: "vrymnox-liquidation-hub",
-    vercelName: "vrymnox-liquidation-hub",
-    title: "Vrymnox — Staged Portfolio Liquidation & Flash Sale Hub",
-    context:
-      "Full-Stack Architecture, Security Hardening & Concurrency Engineering",
-    summary:
-      "An industrial-grade asset liquidation command center featuring zero-credential employer demo modes, real-time engagement analytics, and robust atomic concurrency controls.",
-    description:
-      "Vrymnox is a production-ready full-stack showcase engineered to demonstrate rigorous software architecture and security best practices. Built with Next.js, Express, and PostgreSQL 18, it features granular role-based access control (RBAC), secure session handling, and atomic database transactions to eliminate race conditions during high-stakes flash sales. To deliver a seamless interactive experience, it includes frictionless dual demo modes (Manager and Viewer) supported by a privacy-first salted IP hash analytics pipeline. The system is fully hardened with proxy-aware rate limiting, error sanitization, and automated self-healing data routines to ensure 24/7 reliability for all visitors.",
-    stack: [
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "Express",
-      "PostgreSQL 18",
-      "Tailwind CSS",
-      "Render",
-      "AI / LLM Integration",
-    ],
-    liveUrl: "https://vrymnox.com",
-  },
+  slug: "liquidation-hub",
+  vercelName: "liquidation-hub",
+  title: "Liquidation Hub — High-Throughput E-Commerce & Flash Sale Marketplace",
+  context:
+    "Full-Stack Architecture, Real-Time State Simulation & Enterprise Security",
+  summary:
+    "A high-concurrency liquidation marketplace featuring automated real-time order/inventory stream simulation, zero-credential recruiter demo modes, and zero-trust security hardening.",
+  description:
+    "Liquidation Hub is a production-ready e-commerce showcase built to simulate high-concurrency flash sales and real-time inventory dynamics. Built on a decoupled full-stack architecture with Tailwind CSS, it features an event-driven engine that updates live orders and stock levels in real time, backed by an automated 60-minute memory reset to prevent storage bloat.",
+  stack: [
+    "JavaScript (ES6+)",
+    "Node.js",
+    "Tailwind CSS",
+    "Render Blueprint",
+    "Cloudflare DNS",
+    "RESTful APIs",
+    "State Simulation Engines"
+  ],
+  liveUrl: "https://liquidation-hub-d3g9.onrender.com",
+},
 
   {
     slug: "skinstric",
