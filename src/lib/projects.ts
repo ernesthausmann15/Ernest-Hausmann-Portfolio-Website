@@ -29,7 +29,7 @@ export const featuredProjects: Project[] = [
   vercelName: "liquidation-hub",
   title: "Liquidation Hub — High-Throughput E-Commerce & Flash Sale Marketplace",
   context:
-    "Full-Stack Architecture, Real-Time State Simulation & Enterprise Security",
+    "Full-Stack Architecture, Real-Time State Simulation",
   summary:
     "A high-concurrency liquidation marketplace featuring automated real-time order/inventory stream simulation, zero-credential recruiter demo modes, and zero-trust security hardening.",
   description:
