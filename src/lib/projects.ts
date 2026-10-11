@@ -25,23 +25,22 @@ export type Project = {
 
 export const featuredProjects: Project[] = [
   {
-    slug: "vrymnox-liquidation-engine",
+    slug: "vrymnox-liquidation-hub",
     vercelName: "vrymnox-liquidation-hub",
-    title: "Vrymnox — AI-Powered Liquidation & Flash Sale Engine",
-    context: "Full-Stack Architecture & AI Integration",
+    title: "Vrymnox — Staged Portfolio Liquidation & Flash Sale Hub",
+    context:
+      "Full-Stack Architecture, Security Hardening & Concurrency Engineering",
     summary:
-      "A high-concurrency industrial clearance platform featuring atomic database transactions, enterprise-grade security, and an AI-driven command assistant.",
+      "An industrial-grade asset liquidation command center featuring zero-credential employer demo modes, real-time engagement analytics, and robust atomic concurrency controls.",
     description:
-      "Vrymnox bridges rigorous software engineering with AI orchestration. It features a secure FastAPI backend communicating with a Next.js 16 frontend styled with an industrial Google Stitch design system. Built to solve high-stakes flash sale concurrency challenges, the architecture implements atomic database transactions to eliminate race conditions, double-submit CSRF protection, and role-based access control. An integrated AI command utility enables inventory managers to execute natural language stock queries and rapid adjustments seamlessly.",
+      "Vrymnox is a production-ready full-stack showcase engineered to demonstrate rigorous software architecture and security best practices. Built with Next.js, Express, and PostgreSQL 18, it features granular role-based access control (RBAC), secure session handling, and atomic database transactions to completely eliminate race conditions during high-stakes flash sales. To maximize recruiter engagement, it includes interactive dual demo modes (Manager and Viewer) powered by a privacy-first salted IP hash analytics pipeline. The system is fully hardened with proxy-aware rate limiting, error sanitization, and automated self-healing data routines to ensure 24/7 reliability.",
     stack: [
-      "FastAPI",
-      "Python",
       "Next.js",
       "TypeScript",
-      "Tailwind CSS v4",
-      "PostgreSQL",
-      "SQLAlchemy",
-      "Vercel",
+      "Node.js",
+      "Express",
+      "PostgreSQL 18",
+      "Tailwind CSS",
       "Render",
       "AI / LLM Integration",
     ],
@@ -60,7 +59,7 @@ export const featuredProjects: Project[] = [
     stack: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
     liveUrl: "https://skinstric-internship-nu-nine.vercel.app",
   },
- 
+
   {
     slug: "movie-grab",
     vercelName: "movie-grab-typescript",
