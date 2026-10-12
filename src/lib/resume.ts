@@ -101,7 +101,6 @@ export const skills = [
   "Node.js",
   "Python",
   "PostgreSQL",
-  "Supabase",
   "LLM Orchestration",
   "Data Pipelines",
   "Vercel / Render",
